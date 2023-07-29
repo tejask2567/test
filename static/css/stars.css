@@ -1,0 +1,12 @@
+body {
+    background:black;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: flex;
+}
+.js{
+    display: block;
+    align-content: center;
+    position: relative;
+}

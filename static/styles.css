@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --background-color: #ffe5e5;
+  --color: #000000;
+  --feedback-bg-color: #ffffff;
+  --feedback-secondary-color: #064cce;
+  --feedback-primary-color: #ffffff;
+  --feedback-icon-color: #ffffff;
+  --feedback-form-input: #f4f4f4;
+}
+
+body {
+    
+    display: inline; 
+    align-items: center;
+    justify-content: center;
+    min-height: 50vw; 
+    flex-direction: column;
+    background: linear-gradient(to right,#0f0c29,#302b63,#24243e );
+    background: -webkit-linear-gradient(to right,#0f0c29,#302b63,#24243e );
+    background: url(img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+  } 
+
+.hdr header {
+    position: absolute;
+    color: aliceblue;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(30deg,#021b79,#1363DF,#0f8de0,#0575e6,#021b79);
+    height: 60px;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100vw;
+    text-align: left;
+    overflow: hidden;
+}
+
+.hdr .newdr {
+  align-items: center;
+}
+/* New */
+
+div#loading {
+  top:12vw;
+  left:42vw;
+  max-width: 250px;
+	height: 250px;
+  position: relative;
+  display: none;
+  background: url("loadingimage.gif") no-repeat;
+  cursor: wait;
+  mix-blend-mode: multiply;
+  }
+
+.res_text{
+  display: flex;
+  position: relative;
+  top: 18vw;
+  left:45vw;
+  color:#f4f4f4;
+  font-size:xx-large;
+}
+.ack{
+  display: flex;
+  position: relative;
+  top: 19vw;
+  left:42vw;
+  color:#f4f4f4;
+}
+.view_img{
+  top:12vw;
+  left:38vw;
+  position:relative;
+	max-width: 400px;
+	height: 300px;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.drop-zone {
+  top:15vw;
+  left:40vw;
+  position:relative;
+	max-width: 250px;
+	height: 250px;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	cursor: pointer;
+	color: #cccccc;
+	border: 4px  #009578;
+	border-radius: 10px;
+  background-color: darkgray;
+}
+
+.drop-zone--over {
+	background-color: lightgray;
+}
+
+.drop-zone__input {
+	display: none;
+}
+
+.drop-zone__thumb {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #cccccc;
+	background-size: cover; 
+	position: relative;
+}
+
+.drop-zone__thumb::after {
+	content: attr(data-label);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 14px;
+	text-align: center;
+}
+
+.btn-btn-primary{
+  position:relative;
+  top:16vw;
+  left:42.5vw;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  background-color: var(--feedback-secondary-color);
+  color: var(--feedback-primary-color);
+  transition: all .8s; 
+}
+
+.btn-btn-primary:hover {
+  border-radius: 0px;
+  color: var(--feedback-primary-color);
+  background-color: var(--background-color);
+  background-image: url("img.jpg");
+  animation: animatedBackground 5s linear infinite alternate;
+}
+
+.new-button{
+  position:relative;
+  display: flex;
+  top:16vw;
+  left:42.5vw;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  background-color: var(--feedback-secondary-color);
+  color: var(--feedback-primary-color);
+  transition: all .8s; 
+}
+
+.new-button:hover {
+  border-radius: 0px;
+  color: var(--feedback-primary-color);
+  background-color: var(--background-color);
+  background-image: url("img.jpg");
+  animation: animatedBackground 5s linear infinite alternate;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.Star{
+  position: fixed;
+  top: 12px;
+  right: 50px;
+  width: 4.4%;
+  height: 6.5%;
+  display:inline-flex;
+  padding: 4px;
+  font: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: var(--feedback-secondary-color);
+  color: white;
+  transition: all .8s;
+  
+}
+.hdr .Anchor{
+  color: whitesmoke;
+  text-align: center;
+  font: inherit;
+}
+.hdr .Anchor:hover{
+  color: black;
+  text-align: center;
+  border-radius: 0px;
+}
+.Star:hover {
+  border-radius: 0px;
+  color:#000000;
+  background-color: var(--background-color);
+  background-image: url("icon3.png");
+  animation: animatedBackground 1s linear infinite alternate;
+} 
+
+@keyframes animStar {
+  from {
+    background-size:  75% 0;
+  }
+  to {
+    background-size: 100% 0;
+  }
+}
